@@ -136,12 +136,15 @@ record Customer(String name, ArrayList<Double> transactions) {
 public class Main {
     public static void main(String... args) {
         Customer bob = new Customer("bob", 5000.0);
-        System.out.println(bob);
+        print(bob.toString());
 
     }
 
     private ArrayList<Customer> customers = new ArrayList<>(5000);
 
+    public static void print(String message){
+        System.out.println(message);
+    }
 
 }
 
