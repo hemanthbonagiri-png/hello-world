@@ -137,13 +137,12 @@ public class Main {
     public static void main(String... args) {
         Customer bob = new Customer("bob", 5000.0);
         print(bob.toString());
-
     }
 
     private ArrayList<Customer> customers = new ArrayList<>(5000);
 
     public static void print(String message){
-        System.out.println(message);
+        System.err.println(message);
     }
 
 }
